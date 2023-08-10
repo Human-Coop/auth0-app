@@ -6,10 +6,11 @@ function About() {
 
   return (
     <Layout user={user} loading={loading}>
-      <h1>About</h1>
-      <p>
-        Information here is coming soon.
-      </p>
+      <h1>Learning programs, august 2023</h1>
+      <ul>
+        <li>Leetcode 30 days of pandas</li>
+        <li>Udacity Intro to TensorFlow for Deep Learning Welcome Flow</li>
+      </ul>
     </Layout>
   )
 }
