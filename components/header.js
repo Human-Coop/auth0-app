@@ -69,7 +69,7 @@ function Header({ user, loading }) {
         }
         a {
           color: #fff;
-          text-decoration: none !important;
+          text-decoration: none;
         }
         button {
           font-size: 1rem;

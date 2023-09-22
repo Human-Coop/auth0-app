@@ -27,6 +27,10 @@ function Layout({ user, loading = false, children }) {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
             Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
       `}</style>
     </>
   )
