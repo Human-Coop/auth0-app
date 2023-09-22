@@ -64,12 +64,12 @@ function Header({ user, loading }) {
         li {
           margin-right: 1rem;
         }
-        li:nth-child(2) {
+        li:nth-child(3) {
           margin-right: auto;
         }
         a {
           color: #fff;
-          text-decoration: none;
+          text-decoration: none !important;
         }
         button {
           font-size: 1rem;
