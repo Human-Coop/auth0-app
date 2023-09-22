@@ -15,19 +15,24 @@ function Header({ user, loading }) {
               <a>About</a>
             </Link>
           </li>
+          <li>
+            <Link href="/products">
+              <a>Products</a>
+            </Link>
+          </li>
           {!loading &&
             (user ? (
               <>
                 <li>
                   <Link href="/profile">
-                    <a>Client-rendered profile</a>
+                    <a>Profile</a>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/advanced/ssr-profile">
                     <a>Server rendered profile (advanced)</a>
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <a href="/api/logout">Logout</a>
                 </li>
