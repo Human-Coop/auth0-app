@@ -1,4 +1,5 @@
 import Layout from '../components/layout'
+import { useFetchUser } from '../lib/user'
 import { useFetchProducts } from '../lib/productlist'
 
 // // todo: write addcart function
@@ -18,10 +19,11 @@ import { useFetchProducts } from '../lib/productlist'
 //   }
 
 function Products() {
-  const { user, productlist, loading } = useFetchProducts()
+  const { user, loading } = useFetchUser()
+  const { productlist} = useFetchProducts()
 
   return (
-    <Layout productlist={productlist} loading={loading}>
+    <Layout user={user} loading={loading}>
       <h1> Products </h1>
       <ul>
         { loading ? <>Loading...</> :
