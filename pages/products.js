@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 import { useFetchUser } from '../lib/user'
-import { useFetchProducts } from '../lib/productlist'
+// import { useFetchProducts } from '../lib/productlist'
 
 // // todo: write addcart function
 // function ProductCard({ product }) {
@@ -20,12 +20,12 @@ import { useFetchProducts } from '../lib/productlist'
 
 function Products() {
   const { user, loading } = useFetchUser()
-  const { productlist, products_loading} = useFetchProducts()
+//   const { productlist, products_loading} = useFetchProducts()
 
   return (
     <Layout user={user} loading={loading}>
       <h1> Products </h1>
-      <ul>
+      {/* <ul>
         { (loading & products_loading) ? <>Loading...</> :
         productlist.map((product) => (
             <li>
@@ -40,7 +40,7 @@ function Products() {
             </li>
           ))
         }
-      </ul>
+      </ul> */}
     </Layout>
   )
 }
