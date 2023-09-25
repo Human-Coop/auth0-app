@@ -1,15 +1,34 @@
 import Layout from '../components/layout'
-import { useFetchUser } from '../lib/user'
+import { useFetchProducts } from '../lib/productlist'
+
+// todo: write addcart function
+function ProductCard({ product }) {
+    return (
+      <>
+        <div>
+            <h1>{product.name}</h1>
+            <img src={product.img} />
+            <h3>Price: {product.price}</h3>
+            <h4>Stock: {product.stock}</h4>
+            <p>Details: {product.details}</p>
+            <button onclick={addcart(product.id)}>Add to cart</button>
+        </div>
+      </>
+    )
+  }
 
 function Products() {
-  const { user, loading } = useFetchUser()
+  const { productlist, loading } = useFetchProducts()
 
   return (
-    <Layout user={user} loading={loading}>
+    <Layout productlist={productlist} loading={loading}>
       <h1> Products </h1>
       <ul>
-        <li>Todo: create single product component that loads image, name, price, link to cart </li>
-        <li>Todo: add folder for images and json file of all products</li>
+        { loading ? <>Loading...</> :
+        productlist.map((product) => (
+            <li><ProductCard product={product}/></li>
+          ))
+        }
       </ul>
     </Layout>
   )

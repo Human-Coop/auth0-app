@@ -13,7 +13,7 @@ function Home() {
       {!loading && !user && (
         <>
           <p>
-            A Fresh Start
+            Because the chicken coop is in the backyard...
           </p>
         </>
       )}
