@@ -20,13 +20,13 @@ import { useFetchProducts } from '../lib/productlist'
 
 function Products() {
   const { user, loading } = useFetchUser()
-  const { productlist} = useFetchProducts()
+  const { productlist, products_loading} = useFetchProducts()
 
   return (
     <Layout user={user} loading={loading}>
       <h1> Products </h1>
       <ul>
-        { loading ? <>Loading...</> :
+        { (loading & products_loading) ? <>Loading...</> :
         productlist.map((product) => (
             <li>
                 <div>
