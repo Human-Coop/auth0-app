@@ -2,7 +2,7 @@
 var products = [{
     "id":1,
     "name":"test",
-    "img":"images/test.jpg",
+    "img":"../products/images/test.jpg",
     "price":"$99",
     "stock":1,
     "details":"test"
