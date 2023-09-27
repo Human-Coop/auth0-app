@@ -26,7 +26,7 @@ function Products() {
     <Layout user={user} loading={loading}>
       <h1> Products </h1>
       <ul>
-        { (loading & products_loading) ? <>Loading...</> :
+        { products_loading ? <>Loading...</> :
         productlist.map((product) => (
             <li>
                 <div>
@@ -35,7 +35,7 @@ function Products() {
                     <h3>Price: {product.price}</h3>
                     <h4>Stock: {product.stock}</h4>
                     <p>Details: {product.details}</p>
-                    <button onclick={addcart(product.id)}>Add to cart</button>
+                    {/* <button onclick={addcart(product.id)}>Add to cart</button> */}
                 </div>
             </li>
           ))
