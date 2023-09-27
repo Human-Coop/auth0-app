@@ -25,7 +25,7 @@ function Products() {
   return (
     <Layout user={user} loading={loading}>
       <h1> Products </h1>
-      {/* <ul>
+      <ul>
         { (loading & products_loading) ? <>Loading...</> :
         productlist.map((product) => (
             <li>
@@ -40,7 +40,7 @@ function Products() {
             </li>
           ))
         }
-      </ul> */}
+      </ul>
     </Layout>
   )
 }
