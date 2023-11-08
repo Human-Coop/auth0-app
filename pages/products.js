@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 import { useFetchUser } from '../lib/user'
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 // todo: don't be so hacky
