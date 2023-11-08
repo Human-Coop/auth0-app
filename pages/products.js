@@ -26,7 +26,7 @@ function Products() {
     <Layout user={user} loading={loading}>
       <h1> Products </h1>
       <ul>
-        { products_loading ? <>Loading...</> :
+        { !productlist ? <>Loading...</> :
         productlist.map((product) => (
             <li>
                 <div>
