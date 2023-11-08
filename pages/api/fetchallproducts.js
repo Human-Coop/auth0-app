@@ -18,7 +18,10 @@ var products = [{
 // todo: write handleProductlist function -- eventually products might live in db
 export default async function fetchallproducts(req, res) {
     try {
-        return products
+      fetch('../products/products.json')
+      .then((response) => {return response.json()})
+      .then((json) => console.log(json));
+        //return products
         //await handleProductlist(req, res)
     } catch (error) {
       console.error(error)
