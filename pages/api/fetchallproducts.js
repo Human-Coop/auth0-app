@@ -1,4 +1,4 @@
-import products from 'products.json' assert { type: 'json' };
+import products from './products.json' assert { type: 'json' };
 // todo: write handleProductlist function -- eventually products might live in db
 export default async function fetchallproducts(req, res) {
     try {
