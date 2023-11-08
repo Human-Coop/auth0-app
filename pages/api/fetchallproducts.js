@@ -18,7 +18,7 @@ var products = [{
 // todo: write handleProductlist function -- eventually products might live in db
 export default async function fetchallproducts(req, res) {
     try {
-      fetch('../products/products.json')
+      fetch('./products.json')
       .then((response) => {return response.json()})
       .then((json) => console.log(json));
         //return products
