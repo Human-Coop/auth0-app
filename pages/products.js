@@ -1,6 +1,7 @@
 import Layout from '../components/layout'
 import { useFetchUser } from '../lib/user'
-import { useFetchProducts } from '../lib/productlist'
+// import { useFetchProducts } from '../lib/productlist'
+import products from './allproducts.json' assert { type: 'json' };
 
 // // todo: write addcart function
 // function ProductCard({ product }) {
@@ -20,7 +21,8 @@ import { useFetchProducts } from '../lib/productlist'
 
 function Products() {
   const { user, loading } = useFetchUser()
-  const { productlist } = useFetchProducts()
+  const productlist = products
+  // const { productlist } = useFetchProducts()
 
   return (
     <Layout user={user} loading={loading}>
