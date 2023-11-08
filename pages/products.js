@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import { useFetchUser } from '../lib/user'
 // import { useFetchProducts } from '../lib/productlist'
-import products from './allproducts.json' assert { type: 'json' };
+import products from './api/allproducts.json' assert { type: 'json' };
 
 // // todo: write addcart function
 // function ProductCard({ product }) {
