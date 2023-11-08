@@ -2,14 +2,14 @@
     {
    "id":1,
     "name":"Human Coop Mead",
-    "img":"../products/images/test.jpg",
+    "img":"../../products/images/test.jpg",
     "price":"$5",
     "stock":20,
     "details":"We have 3 flavors: Blueberry, Sour cherry, and Elderberry"
     },{
     "id":2,
     "name":"Dumb Pottery",
-    "img":"../products/images/test.jpg",
+    "img":"../../products/images/test.jpg",
     "price":"$5",
     "stock":10,
     "details":"Get your dumb egg magnets and othe nonsense"
