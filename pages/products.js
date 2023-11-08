@@ -20,7 +20,7 @@ import { useFetchProducts } from '../lib/productlist'
 
 function Products() {
   const { user, loading } = useFetchUser()
-  const { productlist, products_loading} = useFetchProducts()
+  const { productlist } = useFetchProducts()
 
   return (
     <Layout user={user} loading={loading}>

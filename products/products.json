@@ -5,4 +5,12 @@
 "price":"$99",
 "stock":1,
 "details":"test"
-}]
+},{
+    "id":2,
+    "name":"test2",
+    "img":"../products/images/test.jpg",
+    "price":"$99",
+    "stock":2,
+    "details":"test2"
+}
+]

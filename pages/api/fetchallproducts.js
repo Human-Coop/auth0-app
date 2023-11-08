@@ -6,8 +6,16 @@ var products = [{
     "price":"$99",
     "stock":1,
     "details":"test"
-    }]
-// todo: write handleProductlist function
+    },
+    {
+      "id":2,
+      "name":"test2",
+      "img":"../products/images/test.jpg",
+      "price":"$99",
+      "stock":2,
+      "details":"test2"
+      }]
+// todo: write handleProductlist function -- eventually products might live in db
 export default async function fetchallproducts(req, res) {
     try {
         return products
